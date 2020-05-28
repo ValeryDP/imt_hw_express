@@ -1,0 +1,39 @@
+<nav class="blue darken-4">
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo">MyApp</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+        {{#if isHome}}
+        <li class="active"><a href="/">Home</a></li>
+        {{else}}
+        <li><a href="/">Home</a></li>
+        {{/if}}
+
+        {{#if isAbout}}
+        <li class="active"><a href="/about">About</a></li>
+        {{else}}
+        <li><a href="/about">About</a></li>
+        {{/if}}        
+
+        {{#if isContacts}}
+        <li class="active"><a href="/contacts">Contacts</a></li>
+        {{else}}
+        <li><a href="/contacts">Contacts</a></li>
+        {{/if}}
+
+        {{#if isIndex}}
+        <li class="active"><a href="/todo">Todos</a></li>
+        {{else}}
+        <li><a href="/todo">Todos</a></li>
+        {{/if}}
+
+        {{#if isCreate}}
+        <li class="active"><a href="/create">Create</a></li>
+        {{else}}
+        <li><a href="/create">Create</a></li>
+        {{/if}}
+
+
+      </ul>
+    </div>
+  </nav>
